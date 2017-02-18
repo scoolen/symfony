@@ -19,9 +19,9 @@ class AddSecurityVoterPassTest extends \PHPUnit_Framework_TestCase
     public function testThatSecurityVotersAreProcessedInPriorityOrder()
     {
         $services = array(
-            'highest_prio_service' => array(0 => array('priority' => 200)),
-            'lowest_prio_service' => array(0 => array('priority' => 100)),
             'zero_prio_service' => array(0 => array('priority' => 0)),
+            'lowest_prio_service' => array(0 => array('priority' => 100)),
+            'highest_prio_service' => array(0 => array('priority' => 200)),
             'no_prio_service' => array(),
         );
 
